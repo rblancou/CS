@@ -1,5 +1,4 @@
 package com.mycompany.mavenproject1;
-
 /**
  * Hello world!!
  *
@@ -9,9 +8,7 @@ package com.mycompany.mavenproject1;
 	Autor: Borja
 	Version: 1.0
 	
-	Descripcion: Juego del Conecta 4 con modo de 1 o 2 jugadores.
-	
-	Dificultad: Media
+	Descripcion: Juego del Conecta 4 con modo de 1 o 2 jugadore
 */
 
 //	Clase Principal
@@ -22,9 +19,7 @@ import java.lang.*;
 import java.awt.event.*;
 
 class Raya extends JFrame implements ActionListener
-{
-        //HOLA
-    
+{   
 	int turno=0;
 	boolean fin;
 	boolean dosJugadores;
@@ -48,10 +43,8 @@ class Raya extends JFrame implements ActionListener
 	Raya()
 	{
 		//Cargar imagenes
-		
 		foto1=new ImageIcon("foto1.gif");
 		foto2=new ImageIcon("foto2.gif");
-		
 		
 		//menu
 		Nuevo.addActionListener(this);
@@ -67,7 +60,6 @@ class Raya extends JFrame implements ActionListener
 		Barra.add(Opciones);
 		setJMenuBar(Barra);
 		
-		
 		//Panel Principal 
 		JPanel Principal=new JPanel();
 		Principal.setLayout(new GridLayout(7,7));
@@ -77,7 +69,6 @@ class Raya extends JFrame implements ActionListener
 		{
 			for(int j=0;j<7;j++)
 			{
-				
 				boton[i][j]=new JButton();
 				boton[i][j].addActionListener(this);
 				boton[i][j].setBackground(Color.BLACK); 
@@ -86,11 +77,9 @@ class Raya extends JFrame implements ActionListener
 			Nombre.setForeground(Color.BLUE);
 			add(Nombre,"North");
 			add(Principal,"Center");
-			
 		}
 		
 		//Para cerrar la Ventana
-		
 		addWindowListener(new WindowAdapter()
 		{
 			public void windowClosing(WindowEvent we)
@@ -99,7 +88,7 @@ class Raya extends JFrame implements ActionListener
 			}
 		});
 		
-		//tamaÔøΩo frame
+		//tamanio frame
 		setLocation(170,25);
 		setSize (600,600);
 		setResizable(false);
@@ -129,7 +118,6 @@ class Raya extends JFrame implements ActionListener
 				     else ganar1=0;
 				     if(ganar1==4)
 				     {
-				     	 
 					      JOptionPane.showMessageDialog(this,"Gana Jugador Rojo","Conecta 4",JOptionPane.INFORMATION_MESSAGE,foto1);
 					      VolverEmpezar();
 					      fin=true;
