@@ -22,7 +22,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+</project>  
   <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-pmd-plugin</artifactId>
@@ -43,4 +43,4 @@
     </configuration>
   </plugin>
   
-</project>
+
