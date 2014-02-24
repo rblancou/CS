@@ -22,6 +22,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+</project>
   
   <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -42,5 +43,4 @@
     <configLocation>config/sun_checks.xml</configLocation>
     </configuration>
   </plugin>
-  
-</project>
+ 
